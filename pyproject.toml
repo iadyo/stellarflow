@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "stellarflow"
+version = "0.1.0"
+description = ""
+authors = ["iadyo <iamadyoo@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "stellarflow/" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+matplotlib = "^3.8.2"
+numpy = "^1.26.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+pytype = "^2023.12.18"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

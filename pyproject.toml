@@ -18,8 +18,11 @@ pytest = "^7.4.3"
 
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.12.1"
-pytype = "^2023.12.18"
+ruff = "^0.1.11"
+mypy = "^1.8.0"
+
+[tool.ruff.format]
+quote-style = "single"
 
 [build-system]
 requires = ["poetry-core"]

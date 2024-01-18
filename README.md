@@ -1,4 +1,4 @@
-![Tests](https://img.shields.io/github/actions/workflow/status/iadyo/stellarflow/python-app.yml)
+![Tests](https://github.com/iadyo/stellarflow/actions/workflows/python-app.yml/badge.svg)
 ![Ruff](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fastral-sh%2Fruff%2Fmain%2Fassets%2Fbadge%2Fv2.json)
 ![GitHub License](https://img.shields.io/github/license/iadyo/stellarflow)
 [![Poetry](https://img.shields.io/endpoint?url=https://python-poetry.org/badge/v0.json)](https://python-poetry.org/)

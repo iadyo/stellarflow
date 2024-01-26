@@ -35,7 +35,15 @@ class Star:
     def _detrend_by_linear_regression(self, time) -> np.ndarray:
         X = time.reshape(-1, 1)
         y = self._get_data()[1]
-
+        
+        q3 = np.quantile(y, 0.75)
+        q1 = np.quantile(y, 0.25)
+        iqr = q3 - q1
+        
+        high_outlier = y <= (q3 + (1.5 * iqr))
+        low_outlier = y >= (q1 - (1.5 * iqr))
+        y = np.where(low_outlier * high_outlier, y, 1)
+        
         model = LinearRegression().fit(X, y)
         trend = model.predict(X)
         detrended_data = y - trend
@@ -47,7 +55,6 @@ class Star:
 
         plt.figure(figsize=(20, 7))
         plt.scatter(time, ampl, color='black')
-        # plt.plot(time[:-1], self.detrend_by_diff(ampl), ms=12, color='red')
         plt.plot(time, self._detrend_by_linear_regression(time) + 1, ms=12, color='red')
         plt.minorticks_on()
         plt.xlabel('Time')

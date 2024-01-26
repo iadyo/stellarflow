@@ -46,8 +46,7 @@ python stellarflow.py -h
 ### Images:
 
 ![image](https://github.com/iadyo/stellarflow/assets/60442527/8a5f9be3-9271-4942-a9bb-94973f3db265)
-![image](https://github.com/iadyo/stellarflow/assets/60442527/5c1156c0-3dec-4d24-ace5-920f96cf1869)
-![image](https://github.com/iadyo/stellarflow/assets/60442527/7fcd8bfe-c5f9-4d7b-bf3c-abda841fd0df)
+![image](https://github.com/iadyo/stellarflow/assets/60442527/62daf7bd-6857-4cdd-b1c2-a9ff49ac6270)
 
 
 
